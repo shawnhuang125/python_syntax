@@ -184,9 +184,92 @@
   ```
   integer division or modulo by zero
   ```
-- 比較運算符
-```
-```
+- **比較運算符**
+  - `or` 返回第一個為 `True` 的值，或者都是`false`則回傳最後一個操作數。
+  - `and` 返回第一個為 `False` 的值，或者都是`True`則回傳最後一個操作數。
+  ```
+  print("abc"=="abc")
+  print("abc">"abc")
+  print("abc"<"b")
+  print("abc"<"abcd")
+  print("Eng"<"中文")
+  print(not 5>4)
+  print(5>4 and 4<3)
+  print(5>4 or 4<3)
+  print(3 or 2)
+  print(1 and 2)
+  print(0 and 2)
+  print(0 or 2)
+  print(0 or 0)
+  a=4
+  print(3<a<6)
+  print(3<a and a<6)
+  print(3<a<6>(a+1))
+  print(3<a and a<6 and 6>(a+1))
+  ```
+  - 輸出
+  ```
+  True
+  False
+  True
+  True
+  True
+  False
+  False
+  True
+  3
+  2
+  0
+  2
+  0
+  True
+  True
+  True
+  True
+  ```
+- **複合指定運算**
+  ```
+  a=6
+  a-=1
+  print(a)
+  a%=3
+  print(a)
+  b=10
+  b+=a
+  print(b)
+  c=100
+  c/=b
+  print(c)
+  c%=a
+  print(c)
+  ```
+  - Tips:通常來說運算規則為先乘除後加減,括號最優先,同層級則由左至右
+  - python內建函式
+  - 
+  ```
+  #取絕對值
+  print(abs(-2.5))
+  #取最小值
+  print(min(1,2))
+  #取最大值
+  print(max(1,2,3))
+  #pow(a,b,c),a的b次方並除以取餘數
+  print(pow(2,3))
+  print(pow(2,3,5))
+  #round(a,b),a取到小數點後第b位,沒有填b則取到整數位
+  print(round(1.3578,2))
+  print(round(1.3578))
+  ```
+  - 輸出
+  ```
+  2.5
+  1
+  3
+  8
+  3
+  1.36
+  1
+  ```
 ### 資料結構(容器)
 ### 流程控制
 ### 函式
