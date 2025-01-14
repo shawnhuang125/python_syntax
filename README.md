@@ -15,7 +15,7 @@
   print('a hole new world')
   print("""hello'a'hole"new"world""")
   ```
-- 輸出
+  - 輸出
   ```
   12300000000.0
   0.000123
@@ -40,7 +40,7 @@
   print(str(10.0)+'2')
   print(2+int('123'))
   ```
-- 輸出
+  - 輸出
   ```
   2
   1
