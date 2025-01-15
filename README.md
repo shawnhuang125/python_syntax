@@ -271,7 +271,7 @@
   1
   ```
 ### 容器(list,tuple,set,dict)
-  - **list**
+- **list**
   ```
   a = [0,1,2]
   print(a)
